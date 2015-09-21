@@ -2,7 +2,7 @@
   "name": "friendlyalarms",
   "version": "0.0.0",
   "description": "Kyle Pro Cho's Friendly Alarms",
-  "main": "app.js",
+  "main": "client/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

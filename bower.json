@@ -6,7 +6,7 @@
     "Andrew Nickell <nickell.andrew@gmail.com>"
   ],
   "description": "Kyle Pro Cho's Friendly Alarms",
-  "main": "app.js",
+  "main": "client/app.js",
   "moduleType": [
     "globals",
     "node"
