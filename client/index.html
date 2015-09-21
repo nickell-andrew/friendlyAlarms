@@ -7,12 +7,23 @@
     <script src="../bower_components/backbone/backbone.js"></script>
 
     <script src="app.js"></script>
+    <script src="AlarmsView.js"></script>
+    <script src="loginView.js"></script>
+
+    <script src="user.js"></script>
+    <script src="alarm.js"></script>
+    <script src="alarms.js"></script>
+
+
+
 
   </head>
   <body>
     <script type="text/javascript">
-      
-      var app = new AlarmsView({el: $('body')}); //need a collection to hand to AlarmsView
+      $(function(){
+        var app = new App({el: $('body')}); //need a collection to hand to AlarmsView
+        
+      }); 
     </script>  
   </body>
 </html>
