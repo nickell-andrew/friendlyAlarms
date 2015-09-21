@@ -1,0 +1,22 @@
+{
+  "name": "friendlyalarms",
+  "version": "0.0.0",
+  "description": "Kyle Pro Cho's Friendly Alarms",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickell-andrew/friendlyAlarms.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Andrew Nickell <nickell@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickell-andrew/friendlyAlarms/issues"
+  },
+  "homepage": "https://github.com/nickell-andrew/friendlyAlarms#readme"
+}

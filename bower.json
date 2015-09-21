@@ -1,0 +1,26 @@
+{
+  "name": "friendlyalarms",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nickell-andrew/friendlyAlarms",
+  "authors": [
+    "Andrew Nickell <nickell.andrew@gmail.com>"
+  ],
+  "description": "Kyle Pro Cho's Friendly Alarms",
+  "main": "app.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "underscore": "~1.8.3"
+  }
+}
