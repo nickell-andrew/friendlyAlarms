@@ -7,7 +7,6 @@ var AlarmView = Backbone.View.extend({
   },
 
   render: function () {
-    console.log('model is...', this.model);
     this.$el.html(this.template(this.model.attributes));
     return this.$el
   }

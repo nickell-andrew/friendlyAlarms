@@ -3,13 +3,12 @@ var Alarms = Backbone.Collection.extend({
   model: Alarm,
   
   url: window.location.protocol + '//' + window.location.host + '/alarms',
-  // window.location.protocol + '//' + window.location.host + '/alarms',
 
   loadAlarms: function () {
     this.fetch({data: {  }, 
     error: function(e){ console.log('error: ', e); }, 
     success: function (data) {
-      console.log('success', data);
+      console.log('alarms fetched');
     }
   });
   },
