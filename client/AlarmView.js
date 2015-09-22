@@ -1,6 +1,6 @@
 var AlarmView = Backbone.View.extend({
 
-  template: _.template('<ul><li><%= moment().hours(hours).minutes(minutes).format() %></li><li><%- message %></li></ul>'),
+  template: _.template('<ul><li><%= moment().hours(hours).minutes(minutes).calendar() %></li><li><%- message %></li></ul>'),
 
   initialize: function () {
     this.render();

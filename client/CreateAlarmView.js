@@ -15,10 +15,11 @@ var CreateAlarmView = Backbone.View.extend({
     var html = ['<div>',
                   '<form>',
                     '<label>Set alarm for </label>',
+                    '<input id="targets" value="Drew, Mary"></input>',
+                    '<label> in </label>',
                     '<input id="hours"> hours </input>',
                     '<label>and </label>',
                     '<input id="minutes"> minutes </input>',
-                    '<label>from now</label>',
                     '<input id="message" value="alert message"></input>',
                     '<button class="submit-alarm">Create Alarm</button>',
                   '</form>',
@@ -29,13 +30,11 @@ var CreateAlarmView = Backbone.View.extend({
 
   postAlarm: function (e) {
     e.preventDefault();
-    // var alarm = new Alarm({
-    //   hours: this.$el.find('#hours').val(), 
-    //   minutes: this.$el.find('#minutes').val(), 
-    //   message: this.$el.find('#message').val()
-    // });
-    //make a post request to our server
+
+    var targets = this.$el.find('#targets').val().split(', ');
+
     this.collection.create({
+      targets: targets,
       hours: this.$el.find('#hours').val(), 
       minutes: this.$el.find('#minutes').val(), 
       message: this.$el.find('#message').val(),
