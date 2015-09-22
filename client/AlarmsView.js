@@ -3,7 +3,7 @@ var AlarmsView = Backbone.View.extend({
   template: _.template('<div> html() </div>'),
 
   initialize: function (params) {
-    // this.collection.on('sync', this.render, this);
+    this.collection.on('sync', this.render, this);
   },
 
   renderAlarmView: function (alarm) {

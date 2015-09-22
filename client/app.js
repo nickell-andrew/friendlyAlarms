@@ -5,7 +5,7 @@ var App = Backbone.View.extend({
     this.alarms = new Alarms();
     this.alarms.loadAlarms();
     this.loginView = new LoginView({model: new User()});
-    this.createAlarmView = new CreateAlarmView({});
+    this.createAlarmView = new CreateAlarmView({collection: this.alarms});
     this.alarmsView = new AlarmsView({collection: this.alarms});
     this.loginView.on('user changed', function(){
       this.alarmsView.getAlarmsForUser(this.loginView.model.get('username'));
@@ -14,6 +14,6 @@ var App = Backbone.View.extend({
   },
 
   render: function () {
-    this.$el.append([this.loginView.$el, this.alarmsView.$el]); 
+    this.$el.append([this.loginView.$el, this.createAlarmView.$el, this.alarmsView.$el]); 
   }
 })

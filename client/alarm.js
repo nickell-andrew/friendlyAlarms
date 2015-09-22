@@ -3,9 +3,9 @@ var Alarm = Backbone.Model.extend({
   url: window.location.protocol + '//' + window.location.host + '/alarms', 
   // url: window.location.protocol + '//' + window.location.host + '/alarms',
   defaults: {
-    year: ['2015'],
-    day: ['12', '30'],//time that an alarm is set to go off
-    time: ['14', '55', '54'],
+    date: new Date(),
+    hours: 0, // hours after date
+    minutes: 1, // minutes after date
     targets: ['anonymous'],// array of usernames to hand this object to
     message: 'Alarm for no reason!',// text to attach to the alarm
     audio: null // audio to play with this alarm
