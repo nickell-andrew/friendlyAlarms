@@ -8,6 +8,7 @@ var AlarmsView = Backbone.View.extend({
 
   getAlarmsForUser: function (username) {
     // get alarms for the current user
+    this.collection
   },
 
   render: function () {

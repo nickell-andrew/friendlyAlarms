@@ -2,8 +2,9 @@ var App = Backbone.View.extend({
   template: _.template('<div><%= html() %></div>'),
 
   initialize: function () {
+    this.alarms = new Alarms();
     this.loginView = new loginView({model: new User()});
-    this.alarmsView = new AlarmsView({collection: new Alarms(), username: this.loginView.model.username});
+    this.alarmsView = new AlarmsView({collection: this.alarms});
     this.loginView.on('user changed', function(){
       this.alarmsView.getAlarmsForUser(this.loginView.model.get('username'));
     }, this);

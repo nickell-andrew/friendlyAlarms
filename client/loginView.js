@@ -5,7 +5,6 @@ var loginView = Backbone.View.extend({
   loggedIn: _.template("<div>Welcome <em><%= username %></em></div>"),
 
   events: {
-    // this.model.on('change', login, this) 
     "submit .submit": "login"
   },
 

@@ -4,7 +4,8 @@
   "description": "Kyle Pro Cho's Friendly Alarms",
   "main": "client/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/app.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/nickell-andrew/friendlyAlarms/issues"
   },
-  "homepage": "https://github.com/nickell-andrew/friendlyAlarms#readme"
+  "homepage": "https://github.com/nickell-andrew/friendlyAlarms#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "scalpel": "0.0.4"
+  }
 }
