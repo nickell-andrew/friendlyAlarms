@@ -1,4 +1,4 @@
-var loginView = Backbone.View.extend({
+var LoginView = Backbone.View.extend({
   //holds AlarmViews
   loginForm: _.template('<div><h1>Login</h1><form class="submit"><input value="<%= username %>"></input><button type="submit">submit</button>'),
 
