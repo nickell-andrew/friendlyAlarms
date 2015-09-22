@@ -1,5 +1,5 @@
 var Alarms = Backbone.Collection.extend({
-  // some stuff
+  
   model: Alarm,
   
   url: window.location.protocol + '//' + window.location.host + '/alarms',

@@ -1,5 +1,5 @@
 var AlarmsView = Backbone.View.extend({
-  //holds AlarmViews
+
   template: _.template('<div> html() </div>'),
 
   initialize: function (params) {
@@ -13,9 +13,6 @@ var AlarmsView = Backbone.View.extend({
   },
 
   getAlarmsForUser: function (username) {
-    // get alarms for the current user
-    // console.dir(this.collection);
-    // console.log("getAlarmsRun, reRendering");
     this.render();
   },
 
