@@ -6,7 +6,12 @@ var Alarms = Backbone.Collection.extend({
   // window.location.protocol + '//' + window.location.host + '/alarms',
 
   loadAlarms: function () {
-    this.fetch({data: {  }});
+    this.fetch({data: {  }, 
+    error: function(e){ console.log('error: ', e); }, 
+    success: function (data) {
+      console.log('success', data);
+    }
+  });
   },
 
   parse: function (response, options) {
@@ -14,7 +19,7 @@ var Alarms = Backbone.Collection.extend({
     for (var i=0; i < response.length; i++) {
       results.push(response[i]);
     }
-    console.log(results);
+    // console.log(results);
     return results;
   }
 })

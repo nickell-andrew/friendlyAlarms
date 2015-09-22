@@ -3,6 +3,7 @@ var App = Backbone.View.extend({
 
   initialize: function () {
     this.alarms = new Alarms();
+    this.alarms.loadAlarms();
     this.loginView = new loginView({model: new User()});
     this.alarmsView = new AlarmsView({collection: this.alarms});
     this.loginView.on('user changed', function(){
