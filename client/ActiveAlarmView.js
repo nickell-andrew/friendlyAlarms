@@ -1,4 +1,4 @@
-var ActiveAlarm = Backbone.View.extend({
+var ActiveAlarmView = Backbone.View.extend({
   
   tagName: 'div',
 
