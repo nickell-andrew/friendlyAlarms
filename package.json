@@ -22,6 +22,7 @@
   "homepage": "https://github.com/nickell-andrew/friendlyAlarms#readme",
   "dependencies": {
     "express": "^4.13.3",
+    "moment": "^2.10.6",
     "scalpel": "0.0.4"
   }
 }
