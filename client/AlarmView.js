@@ -25,8 +25,10 @@ var AlarmView = Backbone.View.extend({
   },
 
   alarmAlert: function () {
-    this.model.trigger('alarmTrigger', this.model.get('message'));
-    alert(this.model.get('message'));
+    var message = this.model.get('message');
+    console.log(message);
+    this.model.trigger('alarmTrigger', message);
+    // alert(message);
   },
 
   render: function () {

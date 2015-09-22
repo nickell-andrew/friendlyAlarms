@@ -11,6 +11,22 @@ var alarms = [{
 {
     date: new Date(),
     hours: 0,
+    minutes: .2,
+    targets: ['anonymous'],
+    message: 'Alarm for no reason!',
+    audio: null
+},
+{
+    date: new Date(),
+    hours: 0,
+    minutes: .1,
+    targets: ['anonymous'],
+    message: 'Alarm for no reason!',
+    audio: null
+},
+{
+    date: new Date(),
+    hours: 0,
     minutes: 1,
     targets: ['anonymous', 'drew'],
     message: 'Alarm for no reason!',

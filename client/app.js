@@ -15,7 +15,7 @@ var App = Backbone.View.extend({
 
     this.alarmsView.on('alarm', function (message) {
       // implement active alarms
-      this.activeAlarmsView.create({ model: new activeAlarmView({ model: message }) });
+      this.activeAlarmsView.renderActiveAlarm(message);
     }, this);
 
     this.loginView.on('user changed', function(){
@@ -26,6 +26,11 @@ var App = Backbone.View.extend({
   },
 
   render: function () {
-    this.$el.append([this.loginView.$el, this.createAlarmView.$el, this.alarmsView.$el]); 
+    this.$el.append([
+      this.loginView.$el, 
+      this.createAlarmView.$el, 
+      this.alarmsView.$el, 
+      this.activeAlarmsView.$el
+    ]); 
   }
 })
