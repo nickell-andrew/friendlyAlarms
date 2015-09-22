@@ -1,6 +1,6 @@
 var Alarm = Backbone.Model.extend({
   // holds a data object with audio and/or text, a list of recipients, and a time for delivery
-  url: '127.0.0.1:3000/alarms', 
+  url: window.location.protocol + '//' + window.location.host + '/alarms', 
   // url: window.location.protocol + '//' + window.location.host + '/alarms',
   defaults: {
     year: ['2015'],

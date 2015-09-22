@@ -1,3 +1,3 @@
-var AlarmView = Backbone.view.extend({
-  //holds alarms
-})
+var AlarmView = Backbone.View.extend({
+  model: Alarm
+});

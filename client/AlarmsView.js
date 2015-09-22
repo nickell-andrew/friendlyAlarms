@@ -8,11 +8,13 @@ var AlarmsView = Backbone.View.extend({
 
   getAlarmsForUser: function (username) {
     // get alarms for the current user
-    this.collection
+    this.render();
   },
 
   render: function () {
-    this.$el.html(this.template( [1] ));
+    _.each(this.collection, function (alarm){
+      this.$el.append(this.template( new AlarmView({model:alarm}) ));
+    })
     return this.$el;
   }
 })

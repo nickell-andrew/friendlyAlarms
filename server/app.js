@@ -19,7 +19,9 @@ var Cors = function (request, response, next) {
 
 app.use(Cors);
 
-app.use(router)
+app.use(router);
+
+app.use(express.static(__dirname + '/../client'));
 
 app.listen(port);
 console.log('App listening on port: '+ port);

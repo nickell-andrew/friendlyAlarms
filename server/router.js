@@ -5,9 +5,13 @@ var scalpel = require('scalpel');
 
 var router = express.Router();
 
+router.get('/', function (request, response) {
+  response.redirect('/index.html');
+});
+
 router.get('/alarms', function (request, response) {
     response.status(200)
-    .send( JSON.stringify( alarms.getAlarms() ) );
+    .jsonp( alarms.getAlarms() );
   })
 router.post('/alarms', function (request, response) {
     response.status(201)
