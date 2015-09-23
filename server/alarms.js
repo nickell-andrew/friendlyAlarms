@@ -51,7 +51,7 @@ var cleanUpAlarms = function () {
   for(var i=0; i < alarms.length; i++) {
     alarm = alarms[i];
     alarmTime = moment(alarm.date).add(alarm.hours, "hours").add(alarm.minutes, "minutes");
-    console.log(alarmTime.isAfter(currTime), alarmTime.format(), currTime.format());
+    // console.log(alarmTime.isAfter(currTime), alarmTime.format(), currTime.format());
     if( currTime.isAfter(alarmTime) ) {
       alarms.splice(i, 1);
       i--;

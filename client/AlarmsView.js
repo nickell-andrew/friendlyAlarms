@@ -11,7 +11,7 @@ var AlarmsView = Backbone.View.extend({
     // console.log('alarm is ...', alarm);
     var targets = alarm.get('targets');
     var match = false;
-    console.log(targets, this.username);
+    // console.log(targets, this.username);
     for (var i=0; i < targets.length; i++) {
       if(targets[i] === this.username) {
         match = true;

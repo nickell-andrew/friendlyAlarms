@@ -4,14 +4,14 @@ var App = Backbone.View.extend({
   initialize: function () {
     this.alarms = new Alarms();
     this.alarms.loadAlarms();
-    setInterval( (function(){ this.alarms.loadAlarms(); }).bind(this), 60000);
+    setInterval( (function(){ this.alarms.loadAlarms(); }).bind(this), 5000);
     
     this.loginView = new LoginView({model: new User()});
     this.createAlarmView = new CreateAlarmView({collection: this.alarms});
     this.alarmsView = new AlarmsView({collection: this.alarms});
     
-    this.messages = new Messages();
-    this.activeAlarmsView = new ActiveAlarmsView({collection: this.messages});
+    // this.messages = new Messages();
+    this.activeAlarmsView = new ActiveAlarmsView(/*{collection: this.message}*/);
 
     this.alarmsView.on('alarm', function (message) {
       // implement active alarms

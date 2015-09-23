@@ -35,6 +35,7 @@ var CreateAlarmView = Backbone.View.extend({
 
     this.collection.create({
       targets: targets,
+      date: new Date(),
       hours: this.$el.find('#hours').val(), 
       minutes: this.$el.find('#minutes').val(), 
       message: this.$el.find('#message').val(),

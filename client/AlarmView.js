@@ -18,7 +18,7 @@ var AlarmView = Backbone.View.extend({
     
     var timeDiff = time.diff(currTime);
     timeDiff = timeDiff > 0 ? timeDiff : 0;
-    console.log(timeDiff);
+    // console.log(timeDiff);
     
     setTimeout(this.alarmAlert.bind(this), timeDiff);
     // this.model.get()
@@ -26,7 +26,7 @@ var AlarmView = Backbone.View.extend({
 
   alarmAlert: function () {
     var message = this.model.get('message');
-    console.log(message);
+    // console.log(message);
     this.model.trigger('alarmTrigger', message);
     // alert(message);
   },
